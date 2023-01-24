@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sms-app</title>
+  </head>
+  <body>
+    <form action="/sendMessage" method="post">
+      <input
+        type="tel"
+        name="number"
+        placeholder="example:8808008000"
+        pattern="[0-9]{10}"
+        required
+      />
+      <br />
+      <textarea
+        type="textarea"
+        name="msg"
+        placeholder="msg"
+        required
+      ></textarea>
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
